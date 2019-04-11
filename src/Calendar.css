@@ -1,0 +1,46 @@
+.table {
+  color: white;
+  font-size: small;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.square {
+  /*background: #fff;*/
+  border: 1px solid #999;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.row {
+  clear: left;
+  width: auto;
+  margin: 0 auto;
+  /*display: table-row;*/
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.row-outer { width: auto; margin: 0 auto; display: inline-block; }
+
+.btn {
+  float: unset;
+  display: inline-block;
+}
+
+/*div > .btn { clear: left; }*/
