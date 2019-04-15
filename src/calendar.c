@@ -1,4 +1,4 @@
-/* This program takes a valid date (after 01/01/1900) in the calendar
+/* This program takes a valid date in the calendar
 	and returns the correct day of the week */
 
 #include "calendar.h"
