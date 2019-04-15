@@ -5,3 +5,9 @@
 #include <stdbool.h>
 #include <assert.h>
 #include <time.h>
+
+int dayOfWeek(int n, const char date[]);
+
+int dayOfWeekParsed(int d, int m, int y);
+
+long daysBetween(int d, int m, int y);

@@ -137,7 +137,7 @@ bool checkParsed(int d, int m, int y) {
 }
 
 // The first 4 lines of this function have been adapted from https://www.gnu.org/software/libc/manual/html_node/Time-Functions-Example.html
-long daysBetween(int d, int m, int y){
+long daysBetween(int d, int m, int y) {
 	time_t curtime;
 	curtime = time(NULL);
 	struct tm *loctime;
@@ -191,6 +191,7 @@ int dayOfWeekParsed(int d, int m, int y) {
 	long whichDay = calendar(d, m, y) % 7;
 	if (y < 1900) whichDay = 7 - whichDay;
 	if (y < 1582) printf("Warning: this is likely to be incorrect\n");
+	printf("Days between today and the date given: %ld \n", daysBetween(d, m, y));
 	return whichDay;
 }
 

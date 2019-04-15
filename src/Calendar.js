@@ -4,6 +4,8 @@ import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/es/FormControl";
 import './Calendar.css';
 
+const wasm = import("./a.out.wasm");
+
 class Calendar extends Component {
   constructor(props) {
     super(props);
@@ -22,6 +24,16 @@ class Calendar extends Component {
   }
 
   renderMonth(m, y) {
+
+    // const api = {
+    //   getDayOfWeek: Module.cwrap('getDayOfWeek', 'number', []),
+    // };
+
+    console.log("FUCKING HERE", wasm.then(wasm => {
+      return wasm.getDayOfWeek();
+    }));
+
+
     // m = m - 1;
     let d = 1;
     const firstDay = dayOfWeek(d, m, y);
